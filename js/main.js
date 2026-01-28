@@ -26,8 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', resize);
 
         function resize() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
+            width = window.innerWidth;
+            height = window.innerHeight;
+            
+            // High-DPI support
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = width * dpr;
+            canvas.height = height * dpr;
+            ctx.scale(dpr, dpr);
+            
+            // Important: keep CSS size correct
+            canvas.style.width = width + 'px';
+            canvas.style.height = height + 'px';
+
             initParticles();
         }
 
