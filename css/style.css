@@ -1,0 +1,6 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Utilities if needed, currently mostly handled by Tailwind */

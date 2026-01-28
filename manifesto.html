@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoso Labs</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        lab: {
+                            bg: '#FAFAFA',
+                            text: '#111111',
+                            border: '#E5E5E5',
+                            secondary: '#666666',
+                        }
+                    },
+                    spacing: {
+                        'page': '800px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-lab-bg text-lab-text font-sans min-h-screen flex flex-col items-center py-8 px-4 sm:py-12 sm:px-8 selection:bg-black selection:text-white">
+
+    <!-- Main Container -->
+    <main class="w-full max-w-page flex flex-col gap-12 sm:gap-24">
+        
+        <!-- Header -->
+        <header class="flex justify-between items-end border-b border-lab-border pb-4">
+            <h1 class="font-mono text-sm tracking-[0.2em] font-medium uppercase">Yoso Labs</h1>
+        </header>
+
+        <!-- Hero -->
+        <section class="py-2 sm:py-4">
+            <h2 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[0.95] text-black">
+                Intelligence,<br>Applied.
+            </h2>
+        </section>
+
+        <!-- Manifesto -->
+        <section id="manifesto-container" class="space-y-12">
+            <!-- <!-- content will be injected here --> -->
+            
+            <div class="prose prose-neutral max-w-none">
+                <p class="text-base sm:text-lg leading-relaxed text-lab-secondary border-l-2 border-black pl-4 sm:pl-6 italic mb-10 sm:mb-12">
+                    We are a deep-tech collective dedicated to building what matters, openly.
+                    <br><br>
+                    In an era of relentless AI hype and digital-only "wrappers," Yoso Labs exists to ground high-level intelligence into the physical and mathematical world. We aren't here to build another chatbot. We are here to build artifacts.
+                </p>
+
+                <div class="space-y-10">
+                    <article>
+                        <h3 class="font-mono text-xs uppercase tracking-wider mb-2 text-lab-secondary">01 // Implementation</h3>
+                        <h4 class="text-xl font-medium mb-3">Artifacts Over Abstracts</h4>
+                        <p class="text-lab-secondary leading-relaxed max-w-2xl">
+                            Theory is the foundation, but a system is the goal. We don’t stop at the paper; we build the code, the hardware, and the implementation. If it doesn’t do something tangible, it isn’t a Yoso project.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="font-mono text-xs uppercase tracking-wider mb-2 text-lab-secondary">02 // Focus</h3>
+                        <h4 class="text-xl font-medium mb-3">The Anti-Hype Filter</h4>
+                        <p class="text-lab-secondary leading-relaxed max-w-2xl">
+                            We ignore the noise. Our focus is dictated by genuine fascination, not by the shifting tides of the "AI hype cycle." We work on problems that are intellectually demanding and critically important, regardless of whether they are currently deemed "cool" or popular.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="font-mono text-xs uppercase tracking-wider mb-2 text-lab-secondary">03 // Openness</h3>
+                        <h4 class="text-xl font-medium mb-3">Radical Transparency</h4>
+                        <p class="text-lab-secondary leading-relaxed max-w-2xl">
+                            The "Lab" is a glass box. We live-stream our failures, open-source our successes, and document the "messy middle" of the learning process. Our value isn't in a proprietary secret, but in our verifiable ability to execute.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="font-mono text-xs uppercase tracking-wider mb-2 text-lab-secondary">04 // Process</h3>
+                        <h4 class="text-xl font-medium mb-3">Excellence Over Perfection</h4>
+                        <p class="text-lab-secondary leading-relaxed max-w-2xl">
+                            We don’t wait for total mastery to begin. We seek excellence through iteration, acknowledging that in deep tech, it is impossible to know everything. We value the courage to learn in public over the safety of staying within our comfort zones.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="font-mono text-xs uppercase tracking-wider mb-2 text-lab-secondary">05 // Direction</h3>
+                        <h4 class="text-xl font-medium mb-3">Thematic Seasons</h4>
+                        <p class="text-lab-secondary leading-relaxed max-w-2xl">
+                            We are domain-agnostic but focus-driven. Every year, we set a Thematic Compass to guide our collective energy—from Sustainability to Robotics to Smart Infrastructure. We build the future we actually want to live in.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class="font-mono text-xs uppercase tracking-wider mb-2 text-lab-secondary">06 // Community</h3>
+                        <h4 class="text-xl font-medium mb-3">The Collective</h4>
+                        <p class="text-lab-secondary leading-relaxed max-w-2xl">
+                            Yoso is a bridge. We invite researchers, hackers, and engineers to step out of their silos and build "weird" things that don't fit in a corporate roadmap or a traditional thesis.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Card -->
+        <section class="mt-8">
+            <div class="border border-lab-border p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white/50 backdrop-blur-sm">
+                <div>
+                    <span class="font-mono text-[10px] uppercase tracking-widest text-lab-secondary block mb-1">Current Protocol</span>
+                    <span class="font-sans font-medium">Season 0: Embodied Autonomy</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span class="font-mono text-xs text-lab-secondary">System Active</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 border-t border-lab-border flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-sm">
+            <div class="flex flex-col gap-1">
+                <span class="font-mono text-xs text-lab-secondary">CONTACT</span>
+                <a href="mailto:hello@yosolabs.com" class="hover:text-black text-lab-secondary transition-colors">Join the Collective</a>
+            </div>
+            
+            <div class="flex gap-8">
+                <div class="flex flex-col gap-1">
+                    <span class="font-mono text-xs text-lab-secondary">NETWORK</span>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-lab-secondary hover:text-black transition-colors">Twitter / X</a>
+                        <a href="#" class="text-lab-secondary hover:text-black transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>

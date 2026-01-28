@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOSO LABS</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        white: '#FFFFFF',
+                        black: '#000000',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="h-screen w-screen flex flex-col items-center justify-center overflow-hidden text-black font-sans selection:bg-black selection:text-white relative">
+    <canvas id="bg-canvas" class="fixed top-0 left-0 w-full h-full -z-10 bg-white"></canvas>
+
+    <main class="flex flex-col items-center gap-16 px-6 z-10">
+        
+        <!-- Identity -->
+        <div class="text-center flex flex-col items-center">
+            <img src="img/logo-name-vertical-nobg.svg" alt="Yoso Labs Logo" class="w-48 mb-6">
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[0.95] text-black mb-12 h-[80px] sm:h-[120px] flex items-center justify-center">
+                <span id="typewriter-container"><span id="typewriter-text"></span><span id="cursor" class="font-light text-gray-400 animate-pulse">|</span></span>
+            </h1>
+            <p class="text-gray-500 text-sm sm:text-base font-light tracking-wide">At the intersection of deep-tech and reality.</p>
+        </div>
+
+        <!-- Status -->
+        <div class="w-64 flex justify-center">
+            <span class="text-xs text-gray-500 font-light tracking-[0.2em] uppercase">Coming soon</span>
+        </div>
+
+        <!-- CTA -->
+        <form class="flex items-end gap-3 w-64" onsubmit="event.preventDefault();">
+            <input 
+                type="email" 
+                placeholder="Email" 
+                class="w-full bg-transparent border-b border-gray-200 py-2 text-sm outline-none placeholder-gray-300 focus:border-black transition-colors duration-300"
+                required
+            />
+            <button 
+                type="submit" 
+                class="text-xs font-medium uppercase tracking-wide py-2 border-b border-transparent hover:text-gray-500 transition-colors"
+            >
+                Notify
+            </button>
+        </form>
+
+    </main>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
